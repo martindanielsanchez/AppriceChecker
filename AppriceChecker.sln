@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppriceChecker.Android", "AppriceChecker\AppriceChecker.Android\AppriceChecker.Android.csproj", "{AE89B43D-5D52-45AC-BC28-32A11ABE4433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppriceChecker", "AppriceChecker\AppriceChecker\AppriceChecker.csproj", "{3AF8D269-57F1-4970-8AD9-556778FAEE34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE89B43D-5D52-45AC-BC28-32A11ABE4433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE89B43D-5D52-45AC-BC28-32A11ABE4433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE89B43D-5D52-45AC-BC28-32A11ABE4433}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AE89B43D-5D52-45AC-BC28-32A11ABE4433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE89B43D-5D52-45AC-BC28-32A11ABE4433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE89B43D-5D52-45AC-BC28-32A11ABE4433}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3AF8D269-57F1-4970-8AD9-556778FAEE34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AF8D269-57F1-4970-8AD9-556778FAEE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AF8D269-57F1-4970-8AD9-556778FAEE34}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3AF8D269-57F1-4970-8AD9-556778FAEE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AF8D269-57F1-4970-8AD9-556778FAEE34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AF8D269-57F1-4970-8AD9-556778FAEE34}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BC2FC15-7244-4317-8B53-DC47C8976DDA}
+	EndGlobalSection
+EndGlobal
