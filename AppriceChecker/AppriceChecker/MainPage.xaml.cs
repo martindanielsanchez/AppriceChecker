@@ -17,11 +17,16 @@ namespace AppriceChecker
         {
             InitializeComponent();
         }
-        void Handle_Clicked_Search(object sender, System.EventArgs e)
+        void Handle_Clicked_Scan(object sender, System.EventArgs e)
         {
-            //add code to call Scan page
            var page = new ScanProduct();
            Navigation.PushAsync(page);
+        }
+        void Handle_Clicked_Search(object sender, System.EventArgs e)
+        {
+            String s = productDescription.Text;
+            var page = new ProductResult(s, true);
+            Navigation.PushAsync(page);
         }
     }
 }
