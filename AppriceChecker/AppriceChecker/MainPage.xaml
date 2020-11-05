@@ -16,6 +16,8 @@
         </Button>
         <Button Text ="Search by Scan" Clicked="Handle_Clicked_Scan" Margin="5,10,10,10">
         </Button>
+        <Button Text ="Log In" Clicked="Handle_Clicked_Log_In" Margin="5,10,10,10">
+        </Button>
     </StackLayout>
 
 </ContentPage>

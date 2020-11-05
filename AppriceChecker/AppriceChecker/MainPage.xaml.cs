@@ -28,5 +28,11 @@ namespace AppriceChecker
             var page = new ProductResult(s, true);
             Navigation.PushAsync(page);
         }
+        void Handle_Clicked_Log_In(object sender, System.EventArgs e)
+        {
+            //String s = productDescription.Text;
+            var page = new LogIn();
+            Navigation.PushAsync(page);
+        }
     }
 }
