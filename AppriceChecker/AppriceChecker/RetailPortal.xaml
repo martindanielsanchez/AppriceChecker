@@ -5,11 +5,29 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="AppriceChecker.RetailPortal">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Retail Portal"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <ContentPage.Resources>
+        <!-- Implicit styles
+        <Style TargetType="{x:Type ListView}">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource AppBackgroundColor}" />
+        </Style> -->
+    </ContentPage.Resources>
+
+    <ListView x:Name="xlistView"
+              
+              ItemSelected="OnListViewItemSelected"
+              RowHeight = "100">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <!--<TextCell Text="{Binding Text}"
+                          TextColor="Black"/>-->
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" >
+                        <Image Source="{Binding Image}"/>
+                        <Label Text="{Binding Text}" VerticalTextAlignment="Center" FontSize="Large"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </ContentPage>

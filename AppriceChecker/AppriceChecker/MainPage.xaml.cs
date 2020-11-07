@@ -29,6 +29,7 @@ namespace AppriceChecker
             Navigation.PushAsync(page);
         }
         void Handle_Clicked_Log_In(object sender, System.EventArgs e)
+
         {
             //String s = productDescription.Text;
             var page = new LogIn();
