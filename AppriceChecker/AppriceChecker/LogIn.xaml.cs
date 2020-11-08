@@ -18,7 +18,7 @@ namespace AppriceChecker
         }
         void LogInClicked(object sender, System.EventArgs e)
         {
-            var page = new RetailPortal(); //Check if user is Admin, if so go to Admin Portal
+            var page = new AdminPortal(); //Check if user is Admin, if so go to Admin Portal, if not to Retail Portal
             Navigation.PushAsync(page);
         }
         void GoBackClicked(object sender, System.EventArgs e)
