@@ -12,10 +12,16 @@ namespace AppriceChecker
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Registration : ContentPage
     {
-        public Registration(String result)
+        public Registration()
         {
             InitializeComponent();
-            resultScan.Text = result;
+           // resultScan.Text = result;
+        }
+        void RegisterClicked(object sender, System.EventArgs e)
+        {
+            //add code to call Scan page
+            //var page = new ScanProduct();
+            //Navigation.PushAsync(page);
         }
     }
 }

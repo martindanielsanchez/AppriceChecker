@@ -22,9 +22,8 @@ namespace AppriceChecker
         {
             Device.BeginInvokeOnMainThread(async () =>
             {
-
                 String b = result.Text;
-                var page = new Registration(b);
+                var page = new ProductResult(b, false);
                 await Navigation.PushAsync(page);
             });
         }
