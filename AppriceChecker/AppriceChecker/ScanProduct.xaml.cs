@@ -23,7 +23,7 @@ namespace AppriceChecker
             Device.BeginInvokeOnMainThread(async () =>
             {
                 String b = result.Text;
-                var page = new ProductResult(b, false);
+                var page = new ProductResult(b);
                 await Navigation.PushAsync(page);
             });
         }

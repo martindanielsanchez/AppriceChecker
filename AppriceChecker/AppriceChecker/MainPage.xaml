@@ -11,8 +11,8 @@
         <Label Text="Welcome to AppriceChecker!" 
            HorizontalOptions="Center"
            VerticalOptions="StartAndExpand" />
-        <Entry x:Name="productDescription" Placeholder="Enter Product Description"/>
-        <Button Text ="Search by Description" Clicked="Handle_Clicked_Search" Margin="5,10,10,10">
+        <Entry x:Name="productDescription" Placeholder="Enter Product Barcode"/>
+        <Button Text ="Search Manually" Clicked="Handle_Clicked_Search" Margin="5,10,10,10">
         </Button>
         <Button Text ="Search by Scan" Clicked="Handle_Clicked_Scan" Margin="5,10,10,10">
         </Button>

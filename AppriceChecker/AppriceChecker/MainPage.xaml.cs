@@ -25,7 +25,7 @@ namespace AppriceChecker
         void Handle_Clicked_Search(object sender, System.EventArgs e)
         {
             String s = productDescription.Text;
-            var page = new ProductResult(s, true);
+            var page = new ProductResult(s);
             Navigation.PushAsync(page);
         }
         void Handle_Clicked_Log_In(object sender, System.EventArgs e)
