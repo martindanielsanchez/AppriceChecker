@@ -13,6 +13,23 @@
             <Label x:Name="productDescription" Text="Placeholder"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="xlistView"
+              
+              ItemSelected="OnListViewItemSelected"
+              RowHeight = "100">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<TextCell Text="{Binding Text}"
+                          TextColor="Black"/>-->
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" >
+                                <Image Source="{Binding Image}"/>
+                                <Label Text="{Binding Text}" VerticalTextAlignment="Center" FontSize="Large"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
