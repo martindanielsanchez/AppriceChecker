@@ -75,6 +75,36 @@ namespace AppriceChecker
             return itemData;
         }
 
+        public async Task<String> GetItemAdditionAsync(string uri)
+        {
+            //IEnumerable<Models.ItemData> itemData = null;
+            String message = "";
+            try
+            {
+                HttpResponseMessage response = await _client.GetAsync(uri);
+                if (response.IsSuccessStatusCode)
+                {
+                    App.f_log("uri is: " + uri);
+                    message = await response.Content.ReadAsStringAsync();
+                    App.f_log("API Response: " + message);
+                    //if (content.Substring(0, 1) == "[")
+                    //{
+                    //    content = content.Substring(1, content.Length - 2);
+                    //}
+                   // itemData = JsonConvert.DeserializeObject<IEnumerable<Models.ItemData>>(content);
+                }
+            }
+            catch (Exception ex)
+            {
+                //Debug.WriteLine("\tERROR {0}", ex.Message);
+                App.f_log("rest call error, uri: " + uri);
+                App.f_log("rest call error " + ex.Message);
+                message = "Error";
+            }
+
+            return message;
+        }
+
         //public async Task<string> PostTransAsync(string uri, Models.transaction Transaction)
         //{
         //    string sresponse = null;

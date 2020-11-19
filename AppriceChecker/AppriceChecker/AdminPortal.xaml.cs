@@ -31,14 +31,26 @@ namespace AppriceChecker
             });
             menu.Add(new xmenu
             {
-                Text = "Users List",
+                Text = "Add User",
                 Id = 2,
                 Image = "box"
             });
             menu.Add(new xmenu
             {
-                Text = "Retail Portal",
+                Text = "Users List",
                 Id = 3,
+                Image = "box"
+            });
+            menu.Add(new xmenu
+            {
+                Text = "Retail Portal",
+                Id = 4,
+                Image = "Invoice"
+            });
+            menu.Add(new xmenu
+            {
+                Text = "Consumer Portal",
+                Id = 5,
                 Image = "Invoice"
             });
 
@@ -57,11 +69,17 @@ namespace AppriceChecker
                     case "Add Admin":
                         await Navigation.PushAsync(new AddAdminPage { });
                         break;
+                    case "Add User":
+                        await Navigation.PushAsync(new Registration { });
+                        break;
                     case "Users List":
                         await Navigation.PushAsync(new UserListPage { });
                         break;
                     case "Retail Portal":
                         await Navigation.PushAsync(new RetailPortal { });
+                        break;
+                    case "Consumer Portal":
+                        await Navigation.PushAsync(new MainPage { }); //change for going to first part of navigation
                         break;
                 }
             }

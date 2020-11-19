@@ -6,10 +6,52 @@
              mc:Ignorable="d"
              x:Class="AppriceChecker.AddProductPage">
     <ContentPage.Content>
+
         <StackLayout>
-            <Label Text="Add New Product"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <Grid>
+                <StackLayout Padding="5" Margin="40,100,40,45" HorizontalOptions="FillAndExpand" >
+                    <Frame  BackgroundColor="LightGray" HeightRequest="450" HasShadow="True" Padding="4" Margin="0" CornerRadius="20">
+                        <StackLayout>
+                            <FlexLayout Margin="65,0,0,0" Direction="Row" AlignItems="Start">
+                                <!--<Image Margin="0" Source="{local:ImageResource RasPiBtControl.UI.img.helmet_64px.png}" Aspect="AspectFit" />-->
+                                <Label Text=" Add Product"
+                                        VerticalOptions="CenterAndExpand" 
+                                        HorizontalOptions="CenterAndExpand" />
+                            </FlexLayout>
+                            <Label x:Name ="messageLabel" Text= "" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="10">
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name ="barcodeEntry" Placeholder="Barcode" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="10">
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Entry x:Name ="nameEntry" Placeholder="Name" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="10">
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Entry x:Name ="priceEntry" Placeholder="Unit Price" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                                </StackLayout>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="10">
+                                <StackLayout Orientation="Horizontal">
+
+                                    <Entry x:Name ="locationEntry" Placeholder="Location" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                                </StackLayout>
+                            </Frame>
+                            
+
+                            <Button Padding="0" Margin="1" x:Name ="addButton"  Clicked="AddClicked"  Text="Register" BackgroundColor="#042146" TextColor="White" CornerRadius="20" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

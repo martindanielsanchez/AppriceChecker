@@ -12,11 +12,11 @@
            HorizontalOptions="Center"
            VerticalOptions="StartAndExpand" />
         <Entry x:Name="productDescription" Placeholder="Enter Product Barcode"/>
-        <Button Text ="Search Manually" Clicked="Handle_Clicked_Search" Margin="5,10,10,10">
+        <Button Text ="Search Manually" Clicked="Handle_Clicked_Search" BackgroundColor="#042146" TextColor="White" CornerRadius="30">
         </Button>
-        <Button Text ="Search by Scan" Clicked="Handle_Clicked_Scan" Margin="5,10,10,10">
+        <Button Text ="Search by Scan" Clicked="Handle_Clicked_Scan" BackgroundColor="#042146" TextColor="White" CornerRadius="30">
         </Button>
-        <Button Text ="Log In" Clicked="Handle_Clicked_Log_In" Margin="5,10,10,10">
+        <Button Text ="Log In" Clicked="Handle_Clicked_Log_In" BackgroundColor="#042146" TextColor="White" CornerRadius="30">
         </Button>
     </StackLayout>
 

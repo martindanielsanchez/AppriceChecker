@@ -24,8 +24,8 @@
                     <Entry x:Name ="passEntry" Placeholder="Password" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
                 </StackLayout>
             </Frame>
-            <Button x:Name ="log"  Clicked="LogInClicked"  Text="LOG IN" BackgroundColor="#042146" TextColor="White" CornerRadius="30" />
-            <Button x:Name ="back" Clicked="GoBackClicked" Text="GO BACK" BackgroundColor="#042146" TextColor="White" CornerRadius="30" />
+                    <Button x:Name ="log"  Clicked="LogInClicked"  Text="Log In" BackgroundColor="#042146" TextColor="White" CornerRadius="30" />
+                    <Button x:Name ="back" Clicked="GoBackClicked" Text="Go Back" BackgroundColor="#042146" TextColor="White" CornerRadius="30" />
         </StackLayout>
             </Frame>
         </StackLayout>

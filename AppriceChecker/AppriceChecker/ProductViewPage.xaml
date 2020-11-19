@@ -12,16 +12,17 @@
                 HorizontalOptions="CenterAndExpand" />
             <Label x:Name="itemBarcode" Text="Placeholder"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="StartAndExpand" />
             <Label x:Name="itemName" Text="Placeholder"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="StartAndExpand" />
             <Label x:Name="itemPrice" Text="Placeholder"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="StartAndExpand" />
             <Label x:Name="itemLocation" Text="Placeholder"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="StartAndExpand" />
+            <Button Clicked="DeleteClicked" Text="Delete" BackgroundColor="#042146" TextColor="White" CornerRadius="30" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
