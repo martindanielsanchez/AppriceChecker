@@ -7,21 +7,41 @@
              x:Class="AppriceChecker.ProductViewPage">
     <ContentPage.Content>
         <StackLayout>
+            <StackLayout
+                 Orientation="Horizontal">
             <Label Text="Product View Page"
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Label x:Name="itemBarcode" Text="Placeholder"
+            </StackLayout>
+            <StackLayout
+                 Orientation="Horizontal">
+            <Label Text="Barcode"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="StartAndExpand" />
-            <Label x:Name="itemName" Text="Placeholder"
+                <Entry x:Name="itemBarcode" Placeholder="" IsReadOnly="true" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="LayoutOptions.End" Margin="0,0,20,0"/>
+            </StackLayout>
+            <StackLayout
+                 Orientation="Horizontal">
+                <Label Text="Name"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="StartAndExpand" />
-            <Label x:Name="itemPrice" Text="Placeholder"
+                <Entry x:Name="itemName"  Placeholder="" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="LayoutOptions.End" Margin="0,0,20,0"/>
+            </StackLayout>
+            <StackLayout
+                 Orientation="Horizontal">
+                <Label Text="Price"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="StartAndExpand" />
-            <Label x:Name="itemLocation" Text="Placeholder"
+                <Entry x:Name="itemPrice" Placeholder="" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="LayoutOptions.End" Margin="0,0,20,0"/>
+            </StackLayout>
+            <StackLayout
+                 Orientation="Horizontal">
+                <Label Text="Location"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="StartAndExpand" />
+                <Entry x:Name="itemLocation" Placeholder="" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="LayoutOptions.End" Margin="0,0,20,0"/>
+            </StackLayout>
+            <Button Clicked="UpdateClicked" Text="Update" BackgroundColor="#042146" TextColor="White" CornerRadius="30" />
             <Button Clicked="DeleteClicked" Text="Delete" BackgroundColor="#042146" TextColor="White" CornerRadius="30" />
         </StackLayout>
     </ContentPage.Content>
