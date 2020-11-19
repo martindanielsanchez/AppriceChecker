@@ -7,9 +7,27 @@
              x:Class="AppriceChecker.UserListPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="User List"
+            <Label Text="Products List"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="productDescription" Text="Placeholder"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="xlistView"
+              
+              ItemSelected="OnListViewItemSelected"
+              RowHeight = "100">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" >
+                                <Image Source="{Binding Image}"/>
+                                <Label Text="{Binding Text}" VerticalTextAlignment="Center" FontSize="Large"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

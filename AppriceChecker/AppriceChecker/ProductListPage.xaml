@@ -19,8 +19,6 @@
               RowHeight = "100">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <!--<TextCell Text="{Binding Text}"
-                          TextColor="Black"/>-->
                         <ViewCell>
                             <StackLayout Orientation="Horizontal" >
                                 <Image Source="{Binding Image}"/>

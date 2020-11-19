@@ -36,7 +36,7 @@ namespace AppriceChecker
                         //productDescription.Text += itemData.Name + "\r\n";
                         menu.Add(new pmenu
                         {
-                            Text = itemData.Name,
+                            Text = itemData.ProductId + "\r\n" + itemData.Name,
                             Id = count,
                             Image = "Search",
                             item = itemData
@@ -54,35 +54,7 @@ namespace AppriceChecker
                 //productDescription.Text = "4";
             });
         }
-        //protected override void OnAppearing()
-        //{
-        //    base.OnAppearing();
-
-        //    var menu = new List<pmenu>();
-
-        //    menu.Add(new pmenu
-        //    {
-        //        Text = "Add Products",
-        //        Id = 1,
-        //        Image = "Search"
-        //    });
-        //    menu.Add(new pmenu
-        //    {
-        //        Text = "Products List",
-        //        Id = 2,
-        //        Image = "box"
-        //    });
-        //    menu.Add(new pmenu
-        //    {
-        //        Text = "Most Searched Report",
-        //        Id = 3,
-        //        Image = "Invoice"
-        //    });
-
-        //    //ListView.ItemsSource = menu.ToList();
-        //    xlistView.ItemsSource = menu.ToList();
-
-        //}
+        
         async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem != null)

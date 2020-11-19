@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Newtonsoft.Json;
 
 namespace AppriceChecker.Models
 {
-    class UserData
+    public class UserData
     {
         [JsonProperty("Email")]
         public string Email { get; set; }
