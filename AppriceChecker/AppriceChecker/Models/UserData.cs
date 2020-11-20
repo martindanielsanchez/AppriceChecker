@@ -13,6 +13,8 @@ namespace AppriceChecker.Models
         public string First { get; set; }
         [JsonProperty("Last")]
         public string Last { get; set; }
+        [JsonProperty("Password")]
+        public string Password { get; set; }
         [JsonProperty("IsAdmin")]
         public  Boolean IsAdmin { get; set; }
     }

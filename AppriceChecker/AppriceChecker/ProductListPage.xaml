@@ -10,7 +10,7 @@
             <Label Text="Products List"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Label x:Name="productDescription" Text="Placeholder"
+            <Label x:Name="productDescription" Text="Loading Products..."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <ListView x:Name="xlistView"

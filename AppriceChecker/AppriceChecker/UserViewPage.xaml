@@ -7,9 +7,42 @@
              x:Class="AppriceChecker.UserViewPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
+            <StackLayout
+                 Orientation="Horizontal">
+                <Label Text="User View Page"
+                VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout
+                 Orientation="Horizontal">
+                <Label Text="Email"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="StartAndExpand" />
+                <Entry x:Name="userEmail" Placeholder="" IsReadOnly="true" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="LayoutOptions.End" Margin="0,0,20,0"/>
+            </StackLayout>
+            <StackLayout
+                 Orientation="Horizontal">
+                <Label Text="First"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="StartAndExpand" />
+                <Entry x:Name="userFirst"  Placeholder="" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="LayoutOptions.End" Margin="0,0,20,0"/>
+            </StackLayout>
+            <StackLayout
+                 Orientation="Horizontal">
+                <Label Text="Last"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="StartAndExpand" />
+                <Entry x:Name="userLast" Placeholder="" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="LayoutOptions.End" Margin="0,0,20,0"/>
+            </StackLayout>
+            <StackLayout
+                 Orientation="Horizontal">
+                <Label Text="Password"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="StartAndExpand" />
+                <Entry x:Name="userPassword" Placeholder="" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="LayoutOptions.End" Margin="0,0,20,0"/>
+            </StackLayout>
+            <Button Clicked="UpdateClicked" Text="Update" BackgroundColor="#042146" TextColor="White" CornerRadius="30" />
+            <Button Clicked="DeleteClicked" Text="Delete" BackgroundColor="#042146" TextColor="White" CornerRadius="30" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -57,10 +57,10 @@ namespace AppriceChecker
         {
             if (e.SelectedItem != null)
             {
-                umenu item = (umenu)xlistView.SelectedItem;
+                umenu user = (umenu)xlistView.SelectedItem;
                 //call product view page
 
-                //await Navigation.PushAsync(new UserViewPage(user.user) { }); //NEED TO DO THIS
+                await Navigation.PushAsync(new UserViewPage(user.user) { });
 
             }
         }

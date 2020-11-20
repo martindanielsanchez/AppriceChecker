@@ -79,7 +79,7 @@ namespace AppriceChecker
                         await Navigation.PushAsync(new RetailPortal { });
                         break;
                     case "Consumer Portal":
-                        await Navigation.PushAsync(new MainPage { }); //change for going to first part of navigation
+                        await Navigation.PopToRootAsync(); //essentially logs off so consumers can't access Admin portal by going back on previous pages
                         break;
                 }
             }

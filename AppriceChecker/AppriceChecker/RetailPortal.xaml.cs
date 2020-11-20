@@ -41,6 +41,12 @@ namespace AppriceChecker
                 Id = 3,
                 Image = "Invoice"
             });
+            menu.Add(new xmenu
+            {
+                Text = "Consumer Portal",
+                Id = 4,
+                Image = "Invoice"
+            });
 
             //ListView.ItemsSource = menu.ToList();
             xlistView.ItemsSource = menu.ToList();
@@ -62,6 +68,9 @@ namespace AppriceChecker
                         break;
                     case "Most Searched Report":
                         await Navigation.PushAsync(new ReportPage { });
+                        break;
+                    case "Consumer Portal":
+                        await Navigation.PopToRootAsync(); //essentially logs off so consumers can't access Retail portal by going back on previous pages
                         break;
                 }
             }
