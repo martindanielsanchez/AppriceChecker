@@ -9,11 +9,11 @@
         <StackLayout>
             <Label Text="Product Search Result"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Label x:Name="productDescription" Text="Placeholder"
+                HorizontalOptions="CenterAndExpand" FontSize="Title"/>
+            <Label x:Name="productDescription" Text="Searching..."
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text ="Search Another Product" Clicked="Handle_Clicked_Search_Again" Margin="5,10,10,10">
+                HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+            <Button Text ="Search Another Product" Clicked="Handle_Clicked_Search_Again" BackgroundColor="#042146" TextColor="White" CornerRadius="30">
             </Button>
         </StackLayout>
     </ContentPage.Content>

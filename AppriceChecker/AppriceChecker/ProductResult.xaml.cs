@@ -26,7 +26,7 @@ namespace AppriceChecker
                 //productDescription.Text = "3";
                 if (itemData != null)
                 {
-                    productDescription.Text = "Barcode: " + itemData.ProductId + " Name: " + itemData.Name + " Location: " + itemData.Location + " Unit Price: $" + itemData.UnitPrice;
+                    productDescription.Text = "Barcode: " + itemData.ProductId + "\r\n" + "Name: " + itemData.Name + "\r\n" + "Location: " + itemData.Location + "\r\n" + "Unit Price: $" + itemData.UnitPrice;
                 }
                 else {
                     productDescription.Text = "Product not found";

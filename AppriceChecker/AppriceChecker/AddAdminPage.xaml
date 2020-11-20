@@ -19,6 +19,7 @@
                                         VerticalOptions="CenterAndExpand" 
                                         HorizontalOptions="CenterAndExpand" />
                             </FlexLayout>
+                            <Image Margin="0" Source="user" Aspect="AspectFit" />
                             <Label x:Name ="messageLabel" Text= "" VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"/>
 

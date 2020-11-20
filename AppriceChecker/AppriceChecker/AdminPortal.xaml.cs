@@ -27,31 +27,31 @@ namespace AppriceChecker
             {
                 Text = "Add Admin",
                 Id = 1,
-                Image = "Search"
+                Image = "worker"
             });
             menu.Add(new xmenu
             {
                 Text = "Add User",
                 Id = 2,
-                Image = "box"
+                Image = "businessman"
             });
             menu.Add(new xmenu
             {
                 Text = "Users List",
                 Id = 3,
-                Image = "box"
+                Image = "teamwork"
             });
             menu.Add(new xmenu
             {
                 Text = "Retail Portal",
                 Id = 4,
-                Image = "Invoice"
+                Image = "cashier"
             });
             menu.Add(new xmenu
             {
                 Text = "Consumer Portal",
                 Id = 5,
-                Image = "Invoice"
+                Image = "searchitem"
             });
 
             //ListView.ItemsSource = menu.ToList();

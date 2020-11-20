@@ -14,11 +14,13 @@
                     <Frame  BackgroundColor="LightGray" HeightRequest="450" HasShadow="True" Padding="4" Margin="0" CornerRadius="20">
                         <StackLayout>
                             <FlexLayout Margin="65,0,0,0" Direction="Row" AlignItems="Start">
-                                <!--<Image Margin="0" Source="{local:ImageResource RasPiBtControl.UI.img.helmet_64px.png}" Aspect="AspectFit" />-->
-                                <Label Text=" Registration"
+                                <!--<Image Margin="0" Source="user" Aspect="AspectFit" />-->
+                                <Label Text="Add New User"
                                         VerticalOptions="CenterAndExpand" 
                                         HorizontalOptions="CenterAndExpand" />
+                                
                             </FlexLayout>
+                            <Image Margin="0" Source="user" Aspect="AspectFit" />
                             <Label x:Name ="messageLabel" Text= "" VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"/>
 

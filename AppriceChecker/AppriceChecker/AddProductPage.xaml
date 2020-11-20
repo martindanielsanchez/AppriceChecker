@@ -17,8 +17,10 @@
                                 <!--<Image Margin="0" Source="{local:ImageResource RasPiBtControl.UI.img.helmet_64px.png}" Aspect="AspectFit" />-->
                                 <Label Text=" Add Product"
                                         VerticalOptions="CenterAndExpand" 
-                                        HorizontalOptions="CenterAndExpand" />
+                                        HorizontalOptions="CenterAndExpand" 
+                                       FontSize="Title"/>
                             </FlexLayout>
+                            <Image Margin="0" Source="boxnew" Aspect="AspectFit" />
                             <Label x:Name ="messageLabel" Text= "" VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand"/>
 

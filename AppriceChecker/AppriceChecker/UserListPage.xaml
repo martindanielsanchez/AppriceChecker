@@ -9,7 +9,8 @@
         <StackLayout>
             <Label Text="Users List"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" 
+                   FontSize="Title"/>
             <Label x:Name="productDescription" Text="Loading Users..."
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />

@@ -11,7 +11,8 @@
                  Orientation="Horizontal">
                 <Label Text="User View Page"
                 VerticalOptions="StartAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" 
+                       FontSize="Title"/>
             </StackLayout>
             <StackLayout
                  Orientation="Horizontal">

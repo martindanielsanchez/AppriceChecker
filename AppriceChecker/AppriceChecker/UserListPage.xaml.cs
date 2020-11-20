@@ -37,7 +37,7 @@ namespace AppriceChecker
                         {
                             Text = userData.Email + "\r\n" + userData.First + " " + userData.Last,
                             Id = count,
-                            Image = "Search",
+                            Image = "user",
                             user = userData
                         });
                         count++;

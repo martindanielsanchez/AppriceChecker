@@ -8,9 +8,11 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to AppriceChecker!" 
+        <Label Text="AppriceChecker" 
            HorizontalOptions="Center"
-           VerticalOptions="StartAndExpand" />
+           VerticalOptions="StartAndExpand"
+               FontSize="Title"/>
+        <Image Margin="0" Source="grocery2" Aspect="AspectFit" />
         <Entry x:Name="productDescription" Placeholder="Enter Product Barcode"/>
         <Button Text ="Search Manually" Clicked="Handle_Clicked_Search" BackgroundColor="#042146" TextColor="White" CornerRadius="30">
         </Button>
