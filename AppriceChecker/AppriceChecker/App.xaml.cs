@@ -18,8 +18,7 @@ namespace AppriceChecker
         {
             InitializeComponent();
 
-            Global._server = "http://192.168.2.135:53578"; //server ip, check port
-            //Global._APIendpoint = Global._server + "/api/Articulos";
+            Global._server = "http://192.168.2.135:53578";
             Global._APIendpoint = Global._server;
             App.f_log("AppriceChecker Start " + Global._server);
 

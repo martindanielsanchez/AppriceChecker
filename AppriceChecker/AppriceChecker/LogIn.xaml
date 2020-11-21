@@ -16,7 +16,7 @@
             
             <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
                 <StackLayout Orientation="Horizontal">
-                    <Entry x:Name ="userEntry" Placeholder="Email" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                    <Entry x:Name ="emailEntry" Placeholder="Email" TextColor="DarkGray" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
                 </StackLayout>
             </Frame>
 

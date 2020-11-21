@@ -30,6 +30,8 @@ namespace AppriceChecker
                 user.Last = lastEntry.Text;
                 user.Password = passEntry.Text;
 
+                //Make API call to check if username already exists
+
                 //API call
                 Device.BeginInvokeOnMainThread(async () =>
                 {
