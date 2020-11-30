@@ -35,12 +35,7 @@ namespace AppriceChecker
                 Id = 2,
                 Image = "supplies"
             });
-            menu.Add(new xmenu
-            {
-                Text = "Most Searched Report",
-                Id = 3,
-                Image = "report"
-            });
+
             menu.Add(new xmenu
             {
                 Text = "Consumer Portal",
@@ -61,13 +56,10 @@ namespace AppriceChecker
                 switch (item.Text)
                 {
                     case "Add Products":
-                        await Navigation.PushAsync(new AddProductPage { });
+                        await Navigation.PushAsync(new AddProductPage("") { });
                         break;
                     case "Products List":
                         await Navigation.PushAsync(new ProductListPage { });
-                        break;
-                    case "Most Searched Report":
-                        await Navigation.PushAsync(new ReportPage { });
                         break;
                     case "Consumer Portal":
                         await Navigation.PopToRootAsync(); //essentially logs off so consumers can't access Retail portal by going back on previous pages

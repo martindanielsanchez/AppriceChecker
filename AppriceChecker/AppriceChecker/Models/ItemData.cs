@@ -8,7 +8,7 @@ namespace AppriceChecker.Models
     public class ItemData
     {
         [JsonProperty("ProductId")]
-        public int ProductId { get; set; }
+        public string ProductId { get; set; }
         [JsonProperty("Name")]
         public string Name { get; set; }
         [JsonProperty("Location")]
