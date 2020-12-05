@@ -1,0 +1,91 @@
+Apprice Checker
+
+To Set Up Your Development Environment:
+
+    Install the latest version of Visual Studio Community (2019)
+
+    Make sure you have the Xamarin.Forms package installed in Visual Studio
+
+Opening Solution:
+
+    Download and extract the zip file
+
+    In Visual Studio, press File > Open
+
+    Select the extracted zip file
+
+    Right click on the project solution and press "Restore Nuget Packages"
+
+    Press Build > Clean AppriceChecker
+
+    Press Build > Rebuild AppriceChecker
+
+    To run this project, you must either have an android device whose version is greater than or equal to 8.0 or have a virtual device
+
+To create a virtual device:
+
+    Press Tools > Device Manager
+
+    Press + New Device
+
+    For Base Device, select the latest device
+
+    Leave the defaults and press create
+
+    In Visual Studio, before you run the app, make sure you select the virtual device that you created
+
+How to install the APK file:
+
+    Download the AppriceChecker APK file
+
+    Connect your Android device to your computer
+
+    On your Android device, open Android settings
+
+    Go to Security (or Biometrics and Security or Apps and Notifications; depends on which version of Android you have)
+
+    Tap on "Install unknown apps"
+
+    Transfer the APK file from the computer to Android Device's internal storage
+
+    On the Android tablet, navgiate to the directory where the APK file was stored and press it
+
+    If prompted, select "Allow from this source"
+
+    Go back to the installation of the app, and tap install
+
+How to build an APK file:
+
+    In visual studio, right click on the Android project and select properties (or options on Mac)
+
+    Ensure that the selected build is set for "Release" and not "Debug"
+
+    Go to the Android Application settings, and fill in the details of the application (minimum android version, etc)
+
+    Under Android options, select "Generate one package (.apk) per selected ABI"
+
+    Select ProGuard for Code shrinker
+
+    Build > Clean Solution
+
+    Build > Rebuild
+
+    Build > Archive
+
+    Press Distribute > Ad Hoc
+
+    Press Add
+
+    Enter details (with password)
+
+    Press Create
+
+    Press Save As and Save in Selected Directory on Computer
+
+    Open that saved directory, which will contain the saved Apk file to transfer
+
+For more information, see the following:
+
+*https://docs.microsoft.com/en-us/xamarin/get-started/first-app/?pivots=macos
+
+*https://www.wikihow.tech/Install-APK-Files-on-Android
